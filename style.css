@@ -308,7 +308,7 @@ footer small {
 
 @media screen and (max-width:770px) {
     #header {
-        background-image: none;
+        background-image: url(images/bg_min.png);
     }
 
     .container {
