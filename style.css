@@ -35,7 +35,10 @@ h1 {
 }
 
 .role {
-  color: #3e4042;
+  /* color: #BB836F; */
+  /* color: linear-gradient( 135deg, #FFD26F 10%, #3677FF 100%); */
+  color: #9F91CC;
+  color: #5C5470;
   font-size: 28px;
 }
 
@@ -177,6 +180,8 @@ nav ul li a {
   font-size: 16px;
 }
 
+
+
 .aboutText h2 {
   margin: 50px 0 10px;
   font-size: 28px;
@@ -207,6 +212,12 @@ nav ul li a {
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+#skills h1{
+  padding-bottom: 24px;
+  text-align: center;
+  /* font-size: 38px; */
+}
+
 .skills-row {
   width: 80%;
   margin: auto;
@@ -219,18 +230,19 @@ nav ul li a {
 .skills-col {
   flex-basis: 16%;
   text-align: center;
+  margin: 12px 0;
 }
 
 .skills-col img {
   width: 90%;
   mix-blend-mode: multiply;
-  filter: grayscale(100%);
+  /* filter: grayscale(100%); */
 }
 
 .skills-col img:hover {
   transform: scale(1.1);
-  mix-blend-mode: multiply;
-  filter: grayscale(100%);
+  /* mix-blend-mode: multiply; */
+  /* filter: grayscale(100%); */
 }
 
 .skills-col h4 {
@@ -266,6 +278,12 @@ nav ul li a {
     #ffffff,
     #ece9e6
   );  */
+}
+
+.projectheading{
+  text-align: center;
+  padding: 10px 0;
+  /* font-size: 42px; */
 }
 
 .projectrow {
@@ -341,8 +359,11 @@ footer small {
 
 .socialIcon img {
   display: block;
-  width: 36px;
-  margin: 0 auto 20px;
+  width: 48px;
+  /* margin: 0 auto 20px; */
+  margin-left: 4px;
+  margin-top: 2px;
+  margin-bottom: 2px;
   cursor: pointer;
   /* filter: grayscale(100%);
     mix-blend-mode: multiply; */
@@ -386,11 +407,13 @@ footer small {
 
   .common-btn {
     padding: 10px 16px;
+    /* align-items: center; */
   }
 
   .socialIcon img {
-    width: 20px;
-    margin: 15px auto;
+    width: 28px;
+    margin: 4px 3px;
+    
   }
 
   .about-left {
@@ -410,6 +433,10 @@ footer small {
     font-size: 18px;
   }
 
+  .heading{
+    text-align: center;
+  }
+
   .skills-col {
     flex-basis: 30%;
     margin-bottom: 20px;
@@ -417,6 +444,13 @@ footer small {
 
   .skills-col h4 {
     font-size: 14px;
+  }
+
+  .projectText{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .projectText p{
