@@ -5,6 +5,7 @@
   padding: 0;
   /* box-sizing: border-box; */
   font-family: "Roboto", sans-serif;
+  /* cursor: none; */
 }
 
 /* Hero Page */
@@ -30,15 +31,20 @@
   margin-top: 100px;
 }
 
+.Name {
+  /* background: transparent; */
+  color: transparent;
+  font-size: 47px;
+  -webkit-text-stroke: 1.3px rgba(44, 62, 78, 1);
+  /* -webkit-text-stroke-color: #171616; */
+}
+
 h1 {
   font-size: 34px;
 }
 
 .role {
-  /* color: #BB836F; */
-  /* color: linear-gradient( 135deg, #FFD26F 10%, #3677FF 100%); */
-  color: #9F91CC;
-  color: #5C5470;
+  color: rgba(44, 62, 78, 1);
   font-size: 28px;
 }
 
@@ -65,8 +71,6 @@ p {
 }
 
 .common-btn:hover {
-  /* background-color: #3e4042; */
-  /* background-image: linear-gradient( 76.3deg,  rgba(44,62,78,1) 12.6%, rgba(69,103,131,1) 82.8% ); */
   background-image: linear-gradient(
     110.3deg,
     rgba(73, 93, 109, 1) 4.3%,
@@ -133,8 +137,6 @@ nav ul li a {
   z-index: 2;
   cursor: pointer;
   border-radius: 8px;
-  /* mix-blend-mode: multiply; */
-  /* transition: 4s; */
 }
 
 /* About Me Section */
@@ -144,9 +146,7 @@ nav ul li a {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  /* background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%); */
-  /* background-image: radial-gradient( circle 311px at 8.6% 27.9%,  rgba(62,147,252,0.57) 12.9%, rgba(239,183,192,0.44) 91.2% ); */
-  background: #ece9e6; /* fallback for old browsers */
+  background: #ece9e6;
   background: -webkit-linear-gradient(to right, #ffffff, #ece9e6);
   background: linear-gradient(to bottom, #ffffff, #ece9e6);
 }
@@ -157,13 +157,8 @@ nav ul li a {
 
 .about-left img {
   width: 96%;
-  /* filter: grayscale(100%); */
   mix-blend-mode: multiply;
 }
-
-/* .about-left img:hover {
-    filter: grayscale(0%);
-} */
 
 .about-right {
   flex-basis: 50%;
@@ -179,8 +174,6 @@ nav ul li a {
   text-align: left;
   font-size: 16px;
 }
-
-
 
 .aboutText h2 {
   margin: 50px 0 10px;
@@ -212,7 +205,7 @@ nav ul li a {
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-#skills h1{
+#skills h1 {
   padding-bottom: 24px;
   text-align: center;
   /* font-size: 38px; */
@@ -280,8 +273,8 @@ nav ul li a {
   );  */
 }
 
-.projectheading{
-  text-align: center;
+.projectheading {
+  text-align:center;
   padding: 10px 0;
   /* font-size: 42px; */
 }
@@ -348,7 +341,7 @@ footer small {
 }
 
 .socialIcon {
-  width: 50px;
+  width: 40px;
   position: fixed;
   top: 50%;
   left: 0;
@@ -359,11 +352,11 @@ footer small {
 
 .socialIcon img {
   display: block;
-  width: 48px;
+  width: 40px;
   /* margin: 0 auto 20px; */
-  margin-left: 4px;
-  margin-top: 2px;
-  margin-bottom: 2px;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   cursor: pointer;
   /* filter: grayscale(100%);
     mix-blend-mode: multiply; */
@@ -411,9 +404,8 @@ footer small {
   }
 
   .socialIcon img {
-    width: 28px;
-    margin: 4px 3px;
-    
+    width: 24px;
+    margin: 8px 6px;
   }
 
   .about-left {
@@ -433,7 +425,7 @@ footer small {
     font-size: 18px;
   }
 
-  .heading{
+  .heading {
     text-align: center;
   }
 
@@ -446,15 +438,15 @@ footer small {
     font-size: 14px;
   }
 
-  .projectText{
+  .projectText {
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
   }
 
-  .projectText p{
-    text-align: center;
+  .projectText p {
+    text-align: left;
   }
 
   .projectleft,

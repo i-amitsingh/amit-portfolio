@@ -12,3 +12,5 @@ var typeData = new Typed(".role", {
     backSpeed: 60,
     backDelay: 100,
   });
+
+  
