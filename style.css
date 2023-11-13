@@ -3,9 +3,7 @@
 * {
   margin: 0;
   padding: 0;
-  /* box-sizing: border-box; */
   font-family: "Roboto", sans-serif;
-  /* cursor: none; */
 }
 
 /* Hero Page */
@@ -208,7 +206,6 @@ nav ul li a {
 #skills h1 {
   padding-bottom: 24px;
   text-align: center;
-  /* font-size: 38px; */
 }
 
 .skills-row {
@@ -229,13 +226,10 @@ nav ul li a {
 .skills-col img {
   width: 90%;
   mix-blend-mode: multiply;
-  /* filter: grayscale(100%); */
 }
 
 .skills-col img:hover {
   transform: scale(1.1);
-  /* mix-blend-mode: multiply; */
-  /* filter: grayscale(100%); */
 }
 
 .skills-col h4 {
@@ -260,23 +254,15 @@ nav ul li a {
 
 #project {
   padding: 10px 20px;
-  /* background: #ece9e6; 
-  background: -webkit-linear-gradient(
-    to right,
-    #ffffff,
-    #ece9e6
-  ); 
-  background: linear-gradient(
-    to left,
-    #ffffff,
-    #ece9e6
-  );  */
 }
 
 .projectheading {
-  text-align:center;
+  text-align: center;
   padding: 10px 0;
-  /* font-size: 42px; */
+}
+
+.projects {
+  margin-bottom: 18px;
 }
 
 .projectrow {
@@ -304,6 +290,57 @@ nav ul li a {
 
 .projectText button {
   margin: 30px 0;
+}
+
+#project-card {
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+#project-card .card-row {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#project-card .card {
+  margin-top: 20px;
+  padding: 6px;
+  flex-basis: 30%;
+  /* width: 30%; */
+  border-radius: 10px;
+  box-shadow: #ccc 0px 2px 8px 0px;
+}
+
+#project-card img {
+  object-fit: cover;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.card:hover .card-image {
+  transform: scale(1.03);
+  transition-duration: 200ms;
+  /* overflow: hidden; */
+}
+
+#project-card .card-text {
+  padding: 12px;
+}
+
+#project-card .card-text h2 {
+  font-size: 24px;
+  margin-bottom: 6px;
+}
+
+#project-card .card-text p {
+  font-size: 16px;
+  margin-bottom: 8px;
 }
 
 #footer {
@@ -353,13 +390,10 @@ footer small {
 .socialIcon img {
   display: block;
   width: 40px;
-  /* margin: 0 auto 20px; */
   margin-left: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
   cursor: pointer;
-  /* filter: grayscale(100%);
-    mix-blend-mode: multiply; */
 }
 
 .socialIcon img:hover {
@@ -400,7 +434,6 @@ footer small {
 
   .common-btn {
     padding: 10px 16px;
-    /* align-items: center; */
   }
 
   .socialIcon img {
@@ -456,5 +489,13 @@ footer small {
 
   .projectright {
     margin-top: 70px;
+  }
+
+  .card-row {
+    flex-direction: column;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    gap: 20px;
+    height: 100%;
   }
 }
