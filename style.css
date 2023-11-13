@@ -399,6 +399,13 @@ footer small {
   transform: scale(1.2);
 }
 
+@media screen and (max-width: 1000px) {
+  #project-card .card{
+    flex-basis: 40%;
+  }
+}
+
+
 @media screen and (max-width: 770px) {
   #header {
     background-image: url(images/bg_min.png);
@@ -489,12 +496,9 @@ footer small {
   .projectright {
     margin-top: 70px;
   }
-
-  .card-row {
-    flex-direction: column;
-    flex-basis: 100%;
-    flex-wrap: wrap;
-    gap: 20px;
-    height: 100%;
+  
+  #project-card .card {
+    flex-basis: 100%; 
   }
+
 }
