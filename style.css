@@ -295,7 +295,7 @@ nav ul li a {
 #project-card {
   padding: 0px 20px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
   margin-top: 20px;
 }
@@ -303,16 +303,16 @@ nav ul li a {
 #project-card .card-row {
   width: 90%;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 #project-card .card {
   margin-top: 20px;
   padding: 6px;
   flex-basis: 30%;
-  /* width: 30%; */
+  width: 30%;
   border-radius: 10px;
   box-shadow: #ccc 0px 2px 8px 0px;
 }
@@ -326,7 +326,6 @@ nav ul li a {
 .card:hover .card-image {
   transform: scale(1.03);
   transition-duration: 200ms;
-  /* overflow: hidden; */
 }
 
 #project-card .card-text {
